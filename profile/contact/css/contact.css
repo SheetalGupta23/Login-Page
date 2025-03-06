@@ -1,0 +1,293 @@
+* {
+	padding: 0px;
+	margin: 0px;
+	box-sizing: border-box;
+}
+
+body {
+	background: rgb(255, 0, 153);
+	background: linear-gradient(90deg,
+			rgba(255, 0, 153, 0.5) 0%,
+			rgba(9, 9, 121, 0.3622717696629213) 86%,
+			rgba(0, 212, 255, 0.5589009831460674) 100%);
+}
+
+#contact_box {
+	height: 87vh;
+	width: 400px;
+	border: 1px solid rgba(0, 0, 0, 0.3);
+	border-radius: 15px;
+	padding: 10px;
+	position: fixed;
+	top: 50px;
+	left: 480px;
+	background: white;
+}
+
+#con_list_box {
+	height: 70vh;
+	width: 380px;
+	position: fixed;
+	top: 150px;
+	left: 490px;
+	overflow-y: scroll;
+	padding: 7px;
+}
+
+#heading {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	border-bottom: 1px solid rgba(0, 0, 0, 0.2);
+}
+
+#user_icon {
+	font-size: 30px;
+}
+
+#all_con {
+	font-size: 30px;
+}
+
+#search_box {
+	height: 50px;
+	width: auto;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+
+#srch {
+	height: 30px;
+	width: 330px;
+	padding-left: 10px;
+	margin-left: 8px;
+	border: none;
+	outline: none;
+	border-radius: 10px;
+	background: linear-gradient(to right, #c31432, #240b36);
+	color: white;
+}
+
+input::placeholder {
+	color: #43c6ac;
+}
+
+#search_icon {
+	font-size: 25px;
+}
+
+#con_list_box::-webkit-scrollbar {
+	width: 5px;
+}
+
+#con_list_box::-webkit-scrollbar-track {
+	background-color: inherit;
+}
+
+#con_list_box::-webkit-scrollbar-thumb {
+	background: rgba(0, 0, 0, 0.3);
+	border-radius: 15px;
+}
+
+#name_num_box {
+	height: 50px;
+	width: 100%;
+	border: 1px solid rgba(0, 0, 0, 0.4);
+	border-radius: 10px;
+	padding: 5px;
+	margin-top: 5px;
+}
+
+.fa {
+	margin-right: 5px;
+}
+
+.fa-user {
+	color: rgba(0, 0, 0, 0.4);
+}
+
+#for_name,
+#for_numb {
+	margin-left: 10px;
+}
+
+.fa-mobile {
+	color: rgba(0, 0, 0, 0.4);
+	padding-top: 5px;
+}
+
+.fa-trash {
+	padding: 10px;
+	cursor: pointer;
+}
+
+.fa-edit {
+	cursor: pointer;
+}
+
+#inner_box {
+	height: 20px;
+	width: 70px;
+	float: right;
+	margin-top: -38px;
+}
+
+/*css for next box*/
+#tri_box {
+	height: 200px;
+	width: 200px;
+	background-image: url(../image/triangle.png);
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+#pic_box {
+	height: 160px;
+	width: 160px;
+	border: 3px solid white;
+	border-radius: 50%;
+	background-color: white;
+	box-shadow: 0px 0px 10px grey;
+}
+
+#plus_icon {
+	font-size: 40px;
+	color: #4c4949;
+	position: fixed;
+	right: 10px;
+	bottom: 20px;
+}
+
+#black_box {
+	height: 100vh;
+	width: 100%;
+	position: fixed;
+	top: 0px;
+	left: 0px;
+	background-color: rgba(0, 0, 0, 0.6);
+	display: none;
+}
+
+#detail_box {
+	height: auto;
+	width: 400px;
+	background-color: white;
+	padding: 10px;
+	border-radius: 20px;
+	box-shadow: 0px 0px 10px black;
+	position: fixed;
+	top: 200px;
+	left: 480px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
+}
+
+#h_txt {
+	margin-left: 13px;
+	margin: 15px;
+}
+
+#person_name,
+#person_numb {
+	width: 95%;
+	height: 30px;
+	border-radius: 10px;
+	border: 1px solid lightgrey;
+	outline: none;
+	padding-left: 10px;
+	font-size: 16px;
+	margin: 10px;
+}
+
+#save_btn,
+#dlt_btn {
+	padding: 10px;
+	margin: 15px;
+	width: 80%;
+	border-radius: 20px;
+	box-shadow: 0px 0px 5px grey;
+	border: 1px solid lightgrey;
+	cursor: pointer;
+}
+
+#save_btn:focus {
+	background: linear-gradient(to right, #948e99, #2e1437);
+	color: white;
+	font-size: 18px;
+}
+
+#dlt_btn:focus {
+	background: linear-gradient(to right, #948e99, #2e1437);
+	color: white;
+	font-size: 18px;
+}
+
+#alert_for_name,
+#alert_for_number {
+	height: 15px;
+	width: 95%;
+	color: red;
+	font-family: arial;
+	font-size: 13px;
+	/*border: 1px solid red;*/
+	padding-left: 5px;
+	display: flex;
+	flex-direction: left;
+}
+
+#n_alert,
+#m_alert {
+	display: none;
+}
+
+.fa-bell {
+	color: red;
+}
+
+@media screen and (max-width: 795px) {
+	body {
+		background-color: #cb93f8c5;
+	}
+
+	#contact_box,
+	#con_list_box {
+		width: 100%;
+		left: 0px;
+	}
+
+	#detail_box {
+		width: 100%;
+		left: 0px;
+	}
+
+	#tri_box {
+		display: none;
+	}
+
+	#srch {
+		width: 90%;
+	}
+}
+
+@media (min-width: 800px) and (max-width: 884px) {
+
+	#contact_box,
+	#con_list_box {
+		width: 50%;
+		left: 240px;
+	}
+
+	#detail_box {
+		width: 100%;
+		left: 0px;
+		top: 30%;
+	}
+
+	#srch {
+		width: 90%;
+	}
+}

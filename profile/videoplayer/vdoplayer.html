@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="css/vdoplayer.css">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+		integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+		crossorigin="anonymous" referrerpolicy="no-referrer" />
+	<title>Video Player Page</title>
+</head>
+
+<body>
+	<div id="first_box">
+		<video id="vdo" title="Sample video">
+			<source
+				src="https://media.istockphoto.com/id/2166426634/video/school-of-fish-in-marine-life.mp4?s=mp4-640x640-is&k=20&c=G_xqxSzcXMJX3foVYD30EKMlbfTweW9aUf07-11msjw="
+				type="video/mp4" id="v_src">
+		</video>
+
+		<div id="pro_box">
+			<div id="progress_bar"></div>
+		</div>
+
+		<section id="control_panel">
+			<div id="time_box">
+
+				<p id="time">00:00/00:00</p>
+			</div>
+
+			<div id="p_icons">
+				<button><i class="fa fa-backward" id="backward"></i></button>
+				<button><i class="fa fa-play-circle" id="play"></i></button>
+				<button><i class="fa fa-forward" id="forward"></i></button>
+			</div>
+
+			<div id="s_control">
+				<div id="volume_box">
+					<input type="range" id="volume_range" min="0" max="1" step="0.01">
+				</div>
+				<button><i class="fa-solid fa-music" id="vol_ume"></i></button>
+				<button><i class="fa-solid fa-expand" id="full_screen"></i></button>
+				<div id="speed_box">
+					<input type="range" id="speed_range">
+				</div>
+				<button><i class="fa-solid fa-gauge" id="speed_icon"></i></button>
+			</div>
+		</section>
+	</div>
+
+	<div id="second_box">
+
+		<div id="input_div">
+			<div id="srch_txt">
+				<h3 id="text">Add Videos</h3>
+				<i class="fa fa-plus-square" id="plus_icon"></i>
+			</div>
+			<input type="search" name="search" placeholder="Enter Video name" id="srch_input" class="srch">
+		</div>
+
+		<!-- add videos...................................................................... -->
+		<div id="url_link_box">
+			<form>
+				<label for="name_input">Video Name</label>
+				<input type="text" id="name_input" placeholder="Enter Video Name">
+
+				<label for="link_input">Video URL</label>
+				<input type="text" id="link_input" placeholder="Enter Video URL">
+
+				<button type="submit" id="sub_mit">Save</button>
+			</form>
+		</div>
+		<!-- ................................................................................. -->
+
+		<div id="video_list">
+			<!-- <div id="vdo_list">
+			<p id="title">Video Name</p>
+			<div id="btn_box">
+				<button type="button" id="play_btn">Play</button>
+			<button type="button" id="dlt_btn">Delete</button>
+			</div>
+		</div> -->
+		</div>
+	</div>
+
+
+	<script src="js/vdoplayer.js"></script>
+</body>
+
+</html>

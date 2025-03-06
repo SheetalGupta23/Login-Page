@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Conatct Page</title>
+	<link rel="stylesheet" href="css/contact.css">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+		integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+		crossorigin="anonymous" referrerpolicy="no-referrer" />
+	<link rel="stylesheet" href="animate.css">
+
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+		integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+		crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+
+<body>
+
+	<div id="contact_box">
+		<div id="heading">
+			<p><i class="fa fa-circle-user" id="user_icon"></i><span id="all_con">All Contact</span></p>
+		</div>
+
+		<div id="search_box">
+			<input type="search" name="search" id="srch" placeholder="search contact"
+				class="animate__animated animate__fadeIn"></input><i class="fa fa-search" id="search_icon"></i>
+		</div>
+	</div>
+
+<!-- dynamic code in js -->
+	<div id="con_list_box"></div> 
+
+
+	<!-- code for next box -->
+	<div id="tri_box">
+		<div id="pic_box"></div>
+	</div>
+
+	<i class="fa fa-user-plus" id="plus_icon"></i>
+
+	<div id="black_box" class="animate__animated animate__fadeIn">
+		<form>
+
+			<div id="detail_box" class="animate__animated animate__bounceIn">
+
+				<h1 id="h_txt">Add Contacts</h1>
+				<input type="text" name="name" id="person_name" placeholder="Name">
+				<!-- code for alert msg for name ----------------------------------->
+				<div id="alert_for_name">
+					<p class="animate__animated animate__bounceIn" id="n_alert"><i class="fa fa-bell"></i>Empty field
+					</p>
+				</div>
+
+				<input type="number" name="mobile number" id="person_numb" placeholder="Mobile Number">
+				<!-- code for alert msg for mobile number ------------------------>
+				<div id="alert_for_number">
+					<p class="animate__animated animate__bounceIn" id="m_alert"><i class="fa fa-bell"></i>Empty field
+					</p>
+				</div>
+
+				<input type="submit" id="save_btn" value="Save">
+				<input type="reset" id="dlt_btn" value="Close">
+
+			</div>
+
+		</form>
+	</div>
+
+	<script src="js/contact.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,66 @@
+<!doctype html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<link rel="stylesheet" href="css/profile.css" />
+		<link
+			rel="stylesheet"
+			href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+			integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+			crossorigin="anonymous"
+			referrerpolicy="no-referrer"
+		/>
+		<title>Profile Picture</title>
+	</head>
+	<body>
+		<div id="box">
+			<div id="container">
+				<div id="cover_box">
+					<div id="profile_box">
+						<i
+							class="fa fa-user"
+							aria-hidden="true"
+							id="pic_icon"
+						></i>
+						<input type="file" id="choose_pic" accept="image/*" />
+					</div>
+					<p id="text">Upload Profile Picture</p>
+					<h1 id="user_name"></h1>
+					<button id="btn">
+						Next
+						<i class="fa fa-angle-double-right" id="next_icon"></i>
+					</button>
+				</div>
+			</div>
+		</div>
+
+		<!-- main prfile code.............................. -->
+		<header id="top_head">
+			<div id="box_one">
+				<div id="user_pic"></div>
+
+				<section id="main_content">
+					<h1 id="main_username"></h1>
+
+					<main id="m_user_name">
+						<div id="contact">
+							<i class="fa fa-address-book mp_icon"></i>
+							<h2>Contact</h2>
+						</div>
+						<div id="player">
+							<i class="fa fa-play-circle mp_icon"></i>
+							<h2>Player</h2>
+						</div>
+						<div id="logout">
+							<i class="fa fa-sign-out mp_icon"></i>
+							<h2 id="wait_text">Logout</h2>
+						</div>
+					</main>
+				</section>
+			</div>
+		</header>
+
+		<script src="js/profile.js"></script>
+	</body>
+</html>

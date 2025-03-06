@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="loginpage.css">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+	<title>Login Page</title>
+</head>
+<body>
+	<div id="login">
+		<form id="login-frm">
+			<h1>LOGIN Page</h1>
+
+				<input type="email" name="email" placeholder="Enter Email Id" id="login-user" required="required">
+			
+
+			<div id="msg_box1"><p id="alert_one"> <i class="fa fa-exclamation-triangle"></i>Wrong email id.</p></div>
+
+			<input type="password" name="password" placeholder="Enter password" id="login-pass" required="required">
+
+			<div id="msg_box2"><p id="alert_two"> <i class="fa fa-exclamation-triangle"></i>Wrong Password.</p></div>
+
+
+			<button type="submit">Login</button>
+
+		</form>
+		
+		<p id="foot_one">Don't have an account ? <span><a href="#" id="btn-one">Sign up</a></span></p>
+	</div>
+
+
+	<div id="signin" >
+		<form id="signin-frm" class="animate__animated animate__flash">
+			<h1>Sign In Page</h1>
+
+			<input type="text" name="username" placeholder="Enter Your Name" id="sign-user" required="required">
+
+			<input type="email" name="email Id" placeholder="Enter Your email address" id="sign-email" required="required">
+
+<!---------------------------------------- alert msg ----------------------------------->
+			<div id="msg_box"><p id="alert_msg"> <i class="fa fa-exclamation-triangle"></i>Enter mail already exist.</p></div>
+
+			<input type="number" name="mobile number" placeholder="Enter your mobile number" id="sign-mobile" required="required" pattern="[0-9]{15}" title="Enter A valid Mobile Number">
+
+			<input type="password" name="password" placeholder="Enter password" id="sign-pass" required="required">
+
+			<button type="submit" id="sign-btn">Sign In</button>
+		</form>
+		
+		<p id="foot">Already have an account ? <span><a href="#" id="btn-two">Login</a></span></p>
+	</div>
+
+	<script src="loginpage.js"></script>
+</body>
+</html>
